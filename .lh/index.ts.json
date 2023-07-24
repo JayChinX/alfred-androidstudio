@@ -1,0 +1,26 @@
+{
+    "sourceFile": "index.ts",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1690190104073,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1690190523849,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n import alfred, { OutputItem } from \"./alfred\";\n-import { getRecentProjects } from \"./jetbrains\";\n+import getRecentProjects from \"./jetbrains\";\n \n const items: OutputItem[] = [{ arg: \"\", title: \"Open\", subtitle: \"\" }];\n try {\n   const recentProjects = await getRecentProjects(\"IntelliJIdea\");\n"
+                },
+                {
+                    "date": 1690190530390,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n import alfred, { OutputItem } from \"./alfred\";\n-import getRecentProjects from \"./jetbrains\";\n+import { getRecentProjects } from \"./jetbrains\";\n \n const items: OutputItem[] = [{ arg: \"\", title: \"Open\", subtitle: \"\" }];\n try {\n   const recentProjects = await getRecentProjects(\"IntelliJIdea\");\n"
+                }
+            ],
+            "date": 1690190104073,
+            "name": "Commit-0",
+            "content": "import alfred, {OutputItem} from \"./alfred\";\nimport {getRecentProjects} from \"./jetbrains\"\n\nconst items: OutputItem[] = [{arg: '', title: 'Open', subtitle: ''}]\ntry {\n    const recentProjects = await getRecentProjects('IntelliJIdea');\n    items.push(...recentProjects.reverse().map(i => ({\n        arg: i.path,\n        title: `${i.name}${i.opened ? '(opened)' : ''}`,\n        subtitle: i.path\n    })));\n} catch (e) {\n}\nalfred.output({items}, ['title']);"
+        }
+    ]
+}

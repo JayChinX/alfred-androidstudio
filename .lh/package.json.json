@@ -1,0 +1,42 @@
+{
+    "sourceFile": "package.json",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 6,
+            "patches": [
+                {
+                    "date": 1690190491486,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1690192856307,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,13 +16,12 @@\n     ],\n     \"repository\": \"liangshen001/alfred-intellij-idea\",\n     \"author\": \"Wang Liang <850598163@qq.com>\",\n     \"license\": \"ISC\",\n-    \"dependencies\": {\n-       \n-    },\n+    \"dependencies\": {},\n     \"devDependencies\": {\n+        \"jetbrains\": \"./jetbrains\",\n         \"@liangshen/tsconfig\": \"^1.0.3\",\n         \"@types/node\": \"^18.0.0\",\n         \"typescript\": \"^4.7.4\"\n     }\n-}\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1690192871685,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,8 +18,9 @@\n     \"author\": \"Wang Liang <850598163@qq.com>\",\n     \"license\": \"ISC\",\n     \"dependencies\": {},\n     \"devDependencies\": {\n+        \"alfred\": \"./alfred\",\n         \"jetbrains\": \"./jetbrains\",\n         \"@liangshen/tsconfig\": \"^1.0.3\",\n         \"@types/node\": \"^18.0.0\",\n         \"typescript\": \"^4.7.4\"\n"
+                },
+                {
+                    "date": 1690193172543,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,7 +22,16 @@\n         \"alfred\": \"./alfred\",\n         \"jetbrains\": \"./jetbrains\",\n         \"@liangshen/tsconfig\": \"^1.0.3\",\n         \"@types/node\": \"^18.0.0\",\n+        \"typescript\": \"^4.7.4\",\n+        \"@rollup/plugin-typescript\": \"^11.0.0\",\n+        \"@types/jest\": \"^29.4.0\",\n+        \"@types/node\": \"^18.0.0\",\n+        \"jest\": \"^29.4.3\",\n+        \"rollup\": \"^3.15.0\",\n+        \"ts-jest\": \"^29.0.5\",\n+        \"ts-node\": \"^10.8.1\",\n+        \"tslib\": \"^2.5.0\",\n         \"typescript\": \"^4.7.4\"\n     }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1690193180888,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,12 +22,10 @@\n         \"alfred\": \"./alfred\",\n         \"jetbrains\": \"./jetbrains\",\n         \"@liangshen/tsconfig\": \"^1.0.3\",\n         \"@types/node\": \"^18.0.0\",\n-        \"typescript\": \"^4.7.4\",\n         \"@rollup/plugin-typescript\": \"^11.0.0\",\n         \"@types/jest\": \"^29.4.0\",\n-        \"@types/node\": \"^18.0.0\",\n         \"jest\": \"^29.4.3\",\n         \"rollup\": \"^3.15.0\",\n         \"ts-jest\": \"^29.0.5\",\n         \"ts-node\": \"^10.8.1\",\n"
+                },
+                {
+                    "date": 1690196714007,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,11 +16,8 @@\n     ],\n     \"repository\": \"liangshen001/alfred-intellij-idea\",\n     \"author\": \"Wang Liang <850598163@qq.com>\",\n     \"license\": \"ISC\",\n-    \"dependencies\": {\n-        \"@liangshen/jetbrains\": \"^1.0.3\"\n-    },\n     \"devDependencies\": {\n         \"@liangshen/tsconfig\": \"^1.0.3\",\n         \"@rollup/plugin-typescript\": \"^11.0.0\",\n         \"@types/jest\": \"^29.4.0\",\n"
+                },
+                {
+                    "date": 1690196900597,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n {\n-    \"name\": \"@liangshen/alfred-intellij-idea\",\n+    \"name\": \"Android_Studio\",\n     \"version\": \"1.0.2\",\n     \"description\": \"\",\n     \"main\": \"dist/index.js\",\n     \"type\": \"module\",\n"
+                }
+            ],
+            "date": 1690190491486,
+            "name": "Commit-0",
+            "content": "{\n    \"name\": \"@liangshen/alfred-intellij-idea\",\n    \"version\": \"1.0.2\",\n    \"description\": \"\",\n    \"main\": \"dist/index.js\",\n    \"type\": \"module\",\n    \"scripts\": {\n        \"build\": \"tsc\"\n    },\n    \"keywords\": [\n        \"idea\",\n        \"alfred\",\n        \"workflow\",\n        \"mac\",\n        \"macos\"\n    ],\n    \"repository\": \"liangshen001/alfred-intellij-idea\",\n    \"author\": \"Wang Liang <850598163@qq.com>\",\n    \"license\": \"ISC\",\n    \"dependencies\": {\n       \n    },\n    \"devDependencies\": {\n        \"@liangshen/tsconfig\": \"^1.0.3\",\n        \"@types/node\": \"^18.0.0\",\n        \"typescript\": \"^4.7.4\"\n    }\n}\n"
+        }
+    ]
+}
