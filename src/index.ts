@@ -1,5 +1,5 @@
-import alfred, { OutputItem } from "./src/alfred/index.js";
-import { getRecentProjects } from "./src/jetbrains/index.js";
+import alfred, { OutputItem } from "./alfred/index.js";
+import { getRecentProjects } from "./jetbrains/index.js";
 
 const items: OutputItem[] = [{ arg: "", title: "Open", subtitle: "" }];
 try {

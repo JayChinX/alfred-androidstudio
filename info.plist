@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>bundleid</key>
-	<string>com.liangshen.intellij-idea</string>
+	<string>com.qin.android-studio</string>
 	<key>connections</key>
 	<dict>
 		<key>4D8BB93B-9672-4ACF-BFFF-E32BD2A4DC53</key>

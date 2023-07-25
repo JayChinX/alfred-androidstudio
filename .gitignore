@@ -2,3 +2,5 @@
 /node_modules/
 /dist/
 /.idea/
+.lh
+/package-lock.json

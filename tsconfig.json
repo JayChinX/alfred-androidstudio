@@ -12,6 +12,7 @@
         // "disableReferencedProjectLoad": true,             /* Reduce the number of projects loaded automatically by TypeScript. */
 
         /* Language and Environment */
+        "allowJs": true,
         "target": "es2017",
         // Node.js 8                     /* Set the JavaScript language version for emitted JavaScript and include compatible library declarations. */
         // "lib": [],                                        /* Specify a set of bundled library declaration files that describe the target runtime environment. */
@@ -57,7 +58,7 @@
         // "emitDeclarationOnly": true,                      /* Only output d.ts files and not JavaScript files. */
         // "sourceMap": true,                                /* Create source map files for emitted JavaScript files. */
         // "outFile": "./",                                  /* Specify a file that bundles all outputs into one JavaScript file. If 'declaration' is true, also designates a file that bundles all .d.ts output. */
-        "outDir": "../../../dist",
+        "outDir": "./dist",
         /* Specify an output folder for all emitted files. */
         // "removeComments": true,                           /* Disable emitting comments. */
         // "noEmit": true,                                   /* Disable emitting files from a compilation. */
@@ -120,8 +121,8 @@
         /* Skip type checking all .d.ts files. */
     },
     "exclude": [
-        "../../../dist"
+        "**/dist"
     ],
-    "include": ["src/**/*.ts", "components/**/*.vue", "scripts/*.ts"],
+    "include": ["src/**/*.ts","src/**/*.js"],
     "ts-node": { "esm": true }
 }
