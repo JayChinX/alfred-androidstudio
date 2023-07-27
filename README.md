@@ -12,13 +12,11 @@
 
 ### 安装
 
-```
-npm i -g ts-node
-```
+
 
 ### 使用方法
 
-可使用 option + A 快捷键调出Idea工作流搜索框(或者调出alfred搜索框输入关键字 idea)
+可使用 option + A 快捷键调出as工作流搜索框(或者调出alfred搜索框输入关键字 as)
 
 回车可使用Android Studio打开项目, 按住Command键回车可在Finder中打开项目
 

@@ -1,6 +1,7 @@
 import fs from "fs";
 import os from "os";
 import { xml2js } from "xml-js";
+// import * as xml2js from 'xml-js';
 export async function getRecentProjects(app) {
   const preferencesBasePath = `${os.homedir()}/Library/Application Support/Google/`;
   const folders = fs.readdirSync(preferencesBasePath);

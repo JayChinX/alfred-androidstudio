@@ -2,6 +2,7 @@ import alfred, { OutputItem } from "./alfred/index.js";
 import { getRecentProjects } from "./jetbrains/index.js";
 
 const items: OutputItem[] = [{ arg: "", title: "Open", subtitle: "" }];
+
 try {
   const recentProjects = await getRecentProjects("AndroidStudio");
   // console.log(recentProjects);
