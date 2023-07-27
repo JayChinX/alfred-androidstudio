@@ -12,7 +12,7 @@
 
 ### 安装
 
-
+[安装包](Android%20Studio.alfredworkflow)
 
 ### 使用方法
 
@@ -20,6 +20,7 @@
 
 回车可使用Android Studio打开项目, 按住Command键回车可在Finder中打开项目
 
-
+![](screenshot/1.png)
+![](screenshot/2.png)
 
 # alfred-androidstudio

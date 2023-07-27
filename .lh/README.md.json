@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 7,
+            "activePatchIndex": 9,
             "patches": [
                 {
                     "date": 1690199053093,
@@ -36,6 +36,14 @@
                 {
                     "date": 1690458232688,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,16 +11,15 @@\n * Android Studio\n \n ### 安装\n \n-```\n-npm i -g ts-node\n-```\n \n+\n ### 使用方法\n \n-可使用 option + A 快捷键调出Idea工作流搜索框(或者调出alfred搜索框输入关键字 idea)\n+可使用 option + A 快捷键调出as工作流搜索框(或者调出alfred搜索框输入关键字 as)\n \n 回车可使用Android Studio打开项目, 按住Command键回车可在Finder中打开项目\n \n \n \n+# alfred-androidstudio\n"
+                },
+                {
+                    "date": 1690459714014,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,10 +11,10 @@\n * Android Studio\n \n ### 安装\n \n+[安装包](Android%20Studio.alfredworkflow)\n \n-\n ### 使用方法\n \n 可使用 option + A 快捷键调出as工作流搜索框(或者调出alfred搜索框输入关键字 as)\n \n"
+                },
+                {
+                    "date": 1690459763161,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,7 +19,8 @@\n 可使用 option + A 快捷键调出as工作流搜索框(或者调出alfred搜索框输入关键字 as)\n \n 回车可使用Android Studio打开项目, 按住Command键回车可在Finder中打开项目\n \n+![](./screenshot/1.png)\n+![](screenshot/2.png)\n \n-\n # alfred-androidstudio\n"
                 }
             ],
             "date": 1690199053093,
