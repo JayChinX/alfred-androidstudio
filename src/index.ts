@@ -5,7 +5,7 @@ const items: OutputItem[] = [{ arg: "", title: "Open", subtitle: "" }];
 
 try {
   const recentProjects = await getRecentProjects("AndroidStudio");
-  // console.log(recentProjects);
+  // console.log("recentProjects" + recentProjects);
   items.push(
     ...recentProjects.reverse().map((i) => ({
       arg: i.path,
@@ -13,5 +13,7 @@ try {
       subtitle: i.path,
     }))
   );
-} catch (e) {}
+} catch (e) {
+  // console.log("error" + e);
+}
 alfred.output({ items }, ["title"]);

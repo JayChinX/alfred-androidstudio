@@ -8,6 +8,7 @@ export async function getRecentProjects(app) {
   const appDir = folders
     .filter((name) => name.startsWith(app))
     .reduce((p, v) => (p && p > v ? p : v), "");
+  // console.log(appDir);
   if (!appDir) {
     throw new Error("Not Found Application");
   }
@@ -23,7 +24,17 @@ export async function getRecentProjects(app) {
       (e) => e.name === "option" && e.attributes.name === "additionalInfo"
     )
     .elements.find((e) => e.name === "map")
-    .elements.map((e) => {
+    .elements.filter((e) => {
+      const recentProjectMetaInfo = e.elements
+        .find((e) => e.name === "value")
+        .elements.find((e) => e.name === "RecentProjectMetaInfo");
+      return (
+        recentProjectMetaInfo.attributes &&
+        recentProjectMetaInfo.attributes.frameTitle
+      );
+    })
+    .map((e) => {
+      // console.log(e);
       var _a;
       const recentProjectMetaInfo = e.elements
         .find((e) => e.name === "value")
@@ -35,12 +46,14 @@ export async function getRecentProjects(app) {
         (i) => i.name === "frame"
       );
       const frameTitle = recentProjectMetaInfo.attributes.frameTitle;
+
       const path = `${e.attributes.key}`.replace("$USER_HOME$", os.homedir());
+
       return {
         name: frameTitle
           ? `${frameTitle}`.split(" – ")[0]
           : path.substring(path.lastIndexOf("/") + 1),
-        frameTitle,
+        // frameTitle,
         path: path,
         opened: recentProjectMetaInfo.attributes.opened !== "true",
         workspaceId: recentProjectMetaInfo.attributes.workspaceId,
